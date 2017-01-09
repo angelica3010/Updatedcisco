@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shop</title>
+     <link href="../css/style.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js">
+     
+
+    </script>
+
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+
+    <script src = "../javascript/script.js"></script>
+</head>
+<body>
+
+<div id = "pagewrap">
+
+    <div class="navigation" id="examplenavbar">
+        <ul class="nav">
+            <li>
+                <a class="page-scroll" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="about.html">About</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="shop.html">Shop</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="reviews.html">Reviews</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="contact.html">Contact</a>
+            </li>
+             <li>
+                <a class="page-scroll" href="gallery.html">Gallery</a>
+            </li>
+        </ul>
+    </div>
+
+    <section class = "content" id="shop">
+        <div class="container">
+            <div class="row">
+                <center>
+                    <h2 class="section-heading">Order Form</h2>
+                    <hr class="primary">
+                </center>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+          <!--       <div class="col-lg-12 text-center">
+                    <form action="">
+                      First name:<br>
+                      <input type="text" name="firstname" value="Mickey" required ><br>
+                      Last name:<br>
+                      <input type="text" name="lastname" value="Mouse" required=""><br><br>
+                        <label for="inpEmail">Email address</label>
+                        <input type="email" id="inpEmail" placeholder="Enter email">
+                      <input type="submit" value="Submit">
+                    </form>
+                </div> -->
+
+<form class="cmxform" id="commentForm" method="get" action="">
+  <fieldset>
+    <legend>Please provide your name, email address (won't be published) and a comment</legend>
+    <p>
+      <label for="cname">Name (required, at least 2 characters)</label>
+      <input id="cname" name="name" minlength="2" type="text" required>
+    </p>
+    <p>
+      <label for="cemail">E-Mail (required)</label>
+      <input id="cemail" type="email" name="email" required>
+    </p>
+    <p>
+      <label for="curl">URL (optional)</label>
+      <input id="curl" type="url" name="url">
+    </p>
+    <p>
+      <label for="ccomment">Your comment (required)</label>
+      <textarea id="ccomment" name="comment" required></textarea>
+    </p>
+    <p>
+      <input class="submit" type="submit" value="Submit">
+    </p>
+  </fieldset>
+</form>
+<!-- <script>
+ $("#commentForm").validate();
+</script> -->
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<footer>
+  <h3> Made by Angel Trinh <h3>
+</footer>
+</html>
